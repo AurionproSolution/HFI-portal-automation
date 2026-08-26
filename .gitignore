@@ -1,0 +1,14 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+my-report/
+reports/
+ortoni-report/
+.env
+playwright/.auth/*.json
+screenshots/**/*.png
+!screenshots/.gitkeep
+*.log
+.DS_Store
+Thumbs.db

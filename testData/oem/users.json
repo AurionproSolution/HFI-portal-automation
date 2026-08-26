@@ -1,0 +1,44 @@
+{
+  "meta": {
+    "description": "OEM Portal — user role and OEM scope registry (dev)",
+    "loginUrl": "http://devdealerportal.centralindia.cloudapp.azure.com/oem/login",
+    "lastVerified": "2026-08-12T08:00:00.000Z",
+    "verificationNotes": "Run: npm run verify:oem-users. Requires passwords in .env (OEM_*_PASSWORD) or users.json."
+  },
+  "users": {
+    "ved.prakash": {
+      "username": "ved.prakash",
+      "role": "maker",
+      "oemScope": "4W",
+      "verificationStatus": "active",
+      "notes": "Maker on DEV (Aug-2026). Password in .env as OEM_MAKER_PASSWORD."
+    },
+    "kiran.kumar": {
+      "username": "kiran.kumar",
+      "role": "unknown",
+      "oemScope": "unknown",
+      "verificationStatus": "suspended",
+      "notes": "Account suspended on dev (2026-08-12). Reactivate via OEM IT admin before role verification."
+    },
+    "manoj.kumar": {
+      "username": "manoj.kumar",
+      "role": "unknown",
+      "oemScope": "unknown",
+      "verificationStatus": "suspended",
+      "notes": "Account suspended on dev (2026-08-12). Reactivate via OEM IT admin before role verification."
+    },
+    "dealer15@gmail.com": {
+      "username": "dealer15@gmail.com",
+      "role": "unknown",
+      "oemScope": "unknown",
+      "verificationStatus": "suspended",
+      "notes": "Account suspended on dev (2026-08-12). Reactivate via OEM IT admin before role verification."
+    }
+  },
+  "recommendedEnvMapping": {
+    "OEM_MAKER_USERNAME": "ved.prakash",
+    "OEM_MAKER_PASSWORD": "set in .env (OEM_MAKER_PASSWORD)",
+    "OEM_CHECKER_USERNAME": "pending — assign separate Checker for TC-022/023/024 comparison",
+    "OEM_CHECKER_PASSWORD": "pending — provide valid password"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "lib": ["ES2022", "DOM"],
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "rootDir": ".",
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": ["pages/*"],
+      "@utils/*": ["utils/*"],
+      "@testData/*": ["testData/*"],
+      "@config/*": ["config/*"],
+      "@fixtures/*": ["fixtures/*"],
+      "@tests/*": ["tests/*"],
+      "@data/*": ["testData/hfi/*"]
+    },
+    "types": ["node"]
+  },
+  "include": [
+    "config",
+    "fixtures",
+    "pages",
+    "playwright",
+    "testData",
+    "tests",
+    "utils",
+    "playwright.config.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "reports",
+    "test-results",
+    "my-report",
+    "ortoni-report"
+  ]
+}

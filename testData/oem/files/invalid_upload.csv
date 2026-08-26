@@ -1,0 +1,2 @@
+invoice_number,invoice_date,dealer_code
+INV-INVALID,not-a-date,BAD

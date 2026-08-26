@@ -1,0 +1,1214 @@
+﻿{
+  "config": {
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "D:\\HondaDealerAutomation\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/hfi-portal/Regression/Sprint2/PurchaseOrdersVINsRegression.test.ts",
+      "--project=purchase-orders-vins-chromium",
+      "--workers=1",
+      "--grep=TC-002|TC-003|TC-015|TC-017|TC-034|TC-042|TC-047",
+      "--reporter=json"
+    ],
+    "configFile": "D:\\HondaDealerAutomation\\playwright.config.ts",
+    "rootDir": "D:/HondaDealerAutomation/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "environment": "dev",
+      "application": "Honda Financial Services Dealer Portal",
+      "portal": "hfi-portal",
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "D:/HondaDealerAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "environment": "dev",
+          "application": "Honda Financial Services Dealer Portal",
+          "portal": "hfi-portal",
+          "actualWorkers": 1
+        },
+        "id": "auth-setup",
+        "name": "auth-setup",
+        "testDir": "D:/HondaDealerAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/playwright\\/auth\\/.*\\.auth\\.setup\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/HondaDealerAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "environment": "dev",
+          "application": "Honda Financial Services Dealer Portal",
+          "portal": "hfi-portal",
+          "actualWorkers": 1
+        },
+        "id": "login-chromium",
+        "name": "login-chromium",
+        "testDir": "D:/HondaDealerAutomation/tests",
+        "testIgnore": [
+          "/_probe_/"
+        ],
+        "testMatch": [
+          "/hfi-portal\\/Regression\\/Sprint1\\/LoginRegression\\.test\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/HondaDealerAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "environment": "dev",
+          "application": "Honda Financial Services Dealer Portal",
+          "portal": "hfi-portal",
+          "actualWorkers": 1
+        },
+        "id": "reset-password-chromium",
+        "name": "reset-password-chromium",
+        "testDir": "D:/HondaDealerAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/hfi-portal\\/Regression\\/Sprint1\\/ResetPasswordRegression\\.test\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/HondaDealerAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "environment": "dev",
+          "application": "Honda Financial Services Dealer Portal",
+          "portal": "hfi-portal",
+          "actualWorkers": 1
+        },
+        "id": "onboarding-chromium",
+        "name": "onboarding-chromium",
+        "testDir": "D:/HondaDealerAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/hfi-portal\\/Regression\\/Sprint1\\/(Onboarding|InPrincipal)Regression\\.test\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/HondaDealerAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "environment": "dev",
+          "application": "Honda Financial Services Dealer Portal",
+          "portal": "hfi-portal",
+          "actualWorkers": 1
+        },
+        "id": "transaction-history-chromium",
+        "name": "transaction-history-chromium",
+        "testDir": "D:/HondaDealerAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/hfi-portal\\/Regression\\/Sprint2\\/TransactionHistoryRegression\\.test\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/HondaDealerAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "environment": "dev",
+          "application": "Honda Financial Services Dealer Portal",
+          "portal": "hfi-portal",
+          "actualWorkers": 1
+        },
+        "id": "purchase-orders-vins-chromium",
+        "name": "purchase-orders-vins-chromium",
+        "testDir": "D:/HondaDealerAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/hfi-portal\\/Regression\\/Sprint2\\/PurchaseOrdersVINsRegression\\.test\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/HondaDealerAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "environment": "dev",
+          "application": "Honda Financial Services Dealer Portal",
+          "portal": "hfi-portal",
+          "actualWorkers": 1
+        },
+        "id": "exposure-settings-chromium",
+        "name": "exposure-settings-chromium",
+        "testDir": "D:/HondaDealerAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/hfi-portal\\/Regression\\/Sprint2\\/ExposureSettingsRegression\\.test\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/HondaDealerAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "environment": "dev",
+          "application": "Honda Financial Services Dealer Portal",
+          "portal": "hfi-portal",
+          "actualWorkers": 1
+        },
+        "id": "oem-invoice-financing-chromium",
+        "name": "oem-invoice-financing-chromium",
+        "testDir": "D:/HondaDealerAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/oem-portal\\/Regression\\/Sprint2\\/InvoiceFinancingRegression\\.test\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/HondaDealerAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "environment": "dev",
+          "application": "Honda Financial Services Dealer Portal",
+          "portal": "hfi-portal",
+          "actualWorkers": 1
+        },
+        "id": "oem-dealer-limits-chromium",
+        "name": "oem-dealer-limits-chromium",
+        "testDir": "D:/HondaDealerAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/oem-portal\\/Regression\\/Sprint2\\/DealerLimitsRegression\\.test\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/HondaDealerAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "environment": "dev",
+          "application": "Honda Financial Services Dealer Portal",
+          "portal": "hfi-portal",
+          "actualWorkers": 1
+        },
+        "id": "oem-sprint2-regression",
+        "name": "oem-sprint2-regression",
+        "testDir": "D:/HondaDealerAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/oem-portal\\/Regression\\/Sprint2\\/Sprint2Regression\\.test\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/HondaDealerAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "environment": "dev",
+          "application": "Honda Financial Services Dealer Portal",
+          "portal": "hfi-portal",
+          "actualWorkers": 1
+        },
+        "id": "oem-regression",
+        "name": "oem-regression",
+        "testDir": "D:/HondaDealerAutomation/tests",
+        "testIgnore": [
+          "/oem-portal\\/Regression\\/(FullRegression|Sprint2\\/Sprint2Regression)\\.test\\.ts/"
+        ],
+        "testMatch": [
+          "/oem-portal\\/Regression\\/Sprint\\d+\\/.*\\.test\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/HondaDealerAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "environment": "dev",
+          "application": "Honda Financial Services Dealer Portal",
+          "portal": "hfi-portal",
+          "actualWorkers": 1
+        },
+        "id": "oem-full-regression",
+        "name": "oem-full-regression",
+        "testDir": "D:/HondaDealerAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/oem-portal\\/Regression\\/FullRegression\\.test\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/HondaDealerAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "environment": "dev",
+          "application": "Honda Financial Services Dealer Portal",
+          "portal": "hfi-portal",
+          "actualWorkers": 1
+        },
+        "id": "oem-probes",
+        "name": "oem-probes",
+        "testDir": "D:/HondaDealerAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/oem-portal\\/probes\\/.*\\.test\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/HondaDealerAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "environment": "dev",
+          "application": "Honda Financial Services Dealer Portal",
+          "portal": "hfi-portal",
+          "actualWorkers": 1
+        },
+        "id": "sprint1-regression",
+        "name": "sprint1-regression",
+        "testDir": "D:/HondaDealerAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/hfi-portal\\/Regression\\/Sprint1\\/Sprint1Regression\\.test\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/HondaDealerAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "environment": "dev",
+          "application": "Honda Financial Services Dealer Portal",
+          "portal": "hfi-portal",
+          "actualWorkers": 1
+        },
+        "id": "sprint2-regression",
+        "name": "sprint2-regression",
+        "testDir": "D:/HondaDealerAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/hfi-portal\\/Regression\\/Sprint2\\/Sprint2Regression\\.test\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/HondaDealerAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "environment": "dev",
+          "application": "Honda Financial Services Dealer Portal",
+          "portal": "hfi-portal",
+          "actualWorkers": 1
+        },
+        "id": "hfi-regression",
+        "name": "hfi-regression",
+        "testDir": "D:/HondaDealerAutomation/tests",
+        "testIgnore": [
+          "/hfi-portal\\/Regression\\/(FullRegression|Sprint1\\/Sprint1Regression|Sprint2\\/Sprint2Regression)\\.test\\.ts/"
+        ],
+        "testMatch": [
+          "/hfi-portal\\/Regression\\/Sprint\\d+\\/.*\\.test\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/HondaDealerAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "environment": "dev",
+          "application": "Honda Financial Services Dealer Portal",
+          "portal": "hfi-portal",
+          "actualWorkers": 1
+        },
+        "id": "hfi-full-regression",
+        "name": "hfi-full-regression",
+        "testDir": "D:/HondaDealerAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/hfi-portal\\/Regression\\/FullRegression\\.test\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/HondaDealerAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "environment": "dev",
+          "application": "Honda Financial Services Dealer Portal",
+          "portal": "hfi-portal",
+          "actualWorkers": 1
+        },
+        "id": "hfi-probes",
+        "name": "hfi-probes",
+        "testDir": "D:/HondaDealerAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/hfi-portal\\/probes\\/.*\\.test\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/HondaDealerAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "environment": "dev",
+          "application": "Honda Financial Services Dealer Portal",
+          "portal": "hfi-portal",
+          "actualWorkers": 1
+        },
+        "id": "portal-chromium",
+        "name": "portal-chromium",
+        "testDir": "D:/HondaDealerAutomation/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/(smoke|sanity|e2e)\\/.*\\.test\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/HondaDealerAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "environment": "dev",
+          "application": "Honda Financial Services Dealer Portal",
+          "portal": "hfi-portal",
+          "actualWorkers": 1
+        },
+        "id": "smoke",
+        "name": "smoke",
+        "testDir": "D:/HondaDealerAutomation/tests",
+        "testIgnore": [
+          "/hfi-portal\\/probes\\/|seed\\.spec/"
+        ],
+        "testMatch": [
+          "**/*.test.ts"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "D:/HondaDealerAutomation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "environment": "dev",
+          "application": "Honda Financial Services Dealer Portal",
+          "portal": "hfi-portal",
+          "actualWorkers": 1
+        },
+        "id": "regression",
+        "name": "regression",
+        "testDir": "D:/HondaDealerAutomation/tests",
+        "testIgnore": [
+          "/_probe_|hfi-portal\\/probes\\/|seed\\.spec/"
+        ],
+        "testMatch": [
+          "/hfi-portal\\/Regression\\/FullRegression\\.test\\.ts/"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "json"
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "hfi-portal\\Regression\\Sprint2\\PurchaseOrdersVINsRegression.test.ts",
+      "file": "hfi-portal/Regression/Sprint2/PurchaseOrdersVINsRegression.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "US-DLR-009 Purchase Orders & VINs @us-dlr-009 @purchase-orders-vins @regression",
+          "file": "hfi-portal/Regression/Sprint2/PurchaseOrdersVINsRegression.test.ts",
+          "line": 25,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-002 Verify KPI card values match LMS source data @positive @high @honda",
+              "ok": true,
+              "tags": [
+                "us-dlr-009",
+                "purchase-orders-vins",
+                "regression",
+                "positive",
+                "high",
+                "honda"
+              ],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Requires LMS_API_URL to independently query LMS KPI values (AC-1).",
+                      "location": {
+                        "file": "D:\\HondaDealerAutomation\\tests\\hfi-portal\\Regression\\Sprint2\\PurchaseOrdersVINsRegression.test.ts",
+                        "line": 64,
+                        "column": 16
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "purchase-orders-vins-chromium",
+                  "projectName": "purchase-orders-vins-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 5472,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-12T11:49:31.504Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Requires LMS_API_URL to independently query LMS KPI values (AC-1).",
+                          "location": {
+                            "file": "D:\\HondaDealerAutomation\\tests\\hfi-portal\\Regression\\Sprint2\\PurchaseOrdersVINsRegression.test.ts",
+                            "line": 64,
+                            "column": 16
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c73c42dbdf3cf97341dd-855fc34d9369053e9746",
+              "file": "hfi-portal/Regression/Sprint2/PurchaseOrdersVINsRegression.test.ts",
+              "line": 49,
+              "column": 9
+            },
+            {
+              "title": "TC-003 Verify data-load failure shows the standard connectivity error message @negative @high @honda",
+              "ok": true,
+              "tags": [
+                "us-dlr-009",
+                "purchase-orders-vins",
+                "regression",
+                "negative",
+                "high",
+                "honda"
+              ],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Requires PO_VIN_FORCE_DATA_FAILURE=true to simulate LMS timeout/500 (AC-3).",
+                      "location": {
+                        "file": "D:\\HondaDealerAutomation\\tests\\hfi-portal\\Regression\\Sprint2\\PurchaseOrdersVINsRegression.test.ts",
+                        "line": 83,
+                        "column": 16
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "purchase-orders-vins-chromium",
+                  "projectName": "purchase-orders-vins-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 4322,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-12T11:49:41.067Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Requires PO_VIN_FORCE_DATA_FAILURE=true to simulate LMS timeout/500 (AC-3).",
+                          "location": {
+                            "file": "D:\\HondaDealerAutomation\\tests\\hfi-portal\\Regression\\Sprint2\\PurchaseOrdersVINsRegression.test.ts",
+                            "line": 83,
+                            "column": 16
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c73c42dbdf3cf97341dd-fa794357f509d02ad43c",
+              "file": "hfi-portal/Regression/Sprint2/PurchaseOrdersVINsRegression.test.ts",
+              "line": 70,
+              "column": 9
+            },
+            {
+              "title": "TC-015 Verify PO grid displays a maximum of 50 records on one page @edge @high @honda",
+              "ok": true,
+              "tags": [
+                "us-dlr-009",
+                "purchase-orders-vins",
+                "regression",
+                "edge",
+                "high",
+                "honda"
+              ],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Branch has 3 rows; need ΓëÑ50 records to verify page cap (AC-8).",
+                      "location": {
+                        "file": "D:\\HondaDealerAutomation\\tests\\hfi-portal\\Regression\\Sprint2\\PurchaseOrdersVINsRegression.test.ts",
+                        "line": 323,
+                        "column": 16
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "purchase-orders-vins-chromium",
+                  "projectName": "purchase-orders-vins-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 8835,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[STEP] [#1] [2026-08-12T11:49:49.329Z] [HFI Portal ΓÇö Purchase Orders & VINs] Open Purchase Orders & VINs from login\n"
+                        },
+                        {
+                          "text": "[STEP] [#2] [2026-08-12T11:49:49.331Z] [HFI Portal ΓÇö Purchase Orders & VINs] Sign in with active dealer credentials\n"
+                        },
+                        {
+                          "text": "[STEP] [#3] [2026-08-12T11:49:50.877Z] [HFI Portal ΓÇö Login] Sign in as KA00007\n"
+                        },
+                        {
+                          "text": "[STEP] [#4] [2026-08-12T11:49:51.496Z] [HFI Portal ΓÇö Purchase Orders & VINs] Navigate to Purchase Orders & VINs via left navigation\n"
+                        },
+                        {
+                          "text": "[STEP] [#5] [2026-08-12T11:49:51.497Z] [HFI Portal ΓÇö Purchase Orders & VINs] Verify Dealer Finance dashboard is loaded\n"
+                        },
+                        {
+                          "text": "[2026-08-12T11:49:51.497Z] [INFO] Current URL before Dealer Finance check: http://devdealerportal.centralindia.cloudapp.azure.com/consumer\n"
+                        },
+                        {
+                          "text": "[STEP] [#6] [2026-08-12T11:49:51.616Z] [HFI Portal ΓÇö Purchase Orders & VINs] Open Dealer Finance tab from post-login landing page\n"
+                        },
+                        {
+                          "text": "[2026-08-12T11:49:51.812Z] [INFO] Dealer Finance dashboard URL: http://devdealerportal.centralindia.cloudapp.azure.com/dashboard\n"
+                        },
+                        {
+                          "text": "[STEP] [#7] [2026-08-12T11:49:51.812Z] [HFI Portal ΓÇö Purchase Orders & VINs] Read page body text\n"
+                        },
+                        {
+                          "text": "[2026-08-12T11:49:51.842Z] [INFO] URL before Purchase Orders click: http://devdealerportal.centralindia.cloudapp.azure.com/dashboard\n"
+                        },
+                        {
+                          "text": "[2026-08-12T11:49:52.271Z] [INFO] URL after Purchase Orders navigation: http://devdealerportal.centralindia.cloudapp.azure.com/operations/purchase-orders\n"
+                        },
+                        {
+                          "text": "[STEP] [#8] [2026-08-12T11:49:52.272Z] [HFI Portal ΓÇö Purchase Orders & VINs] Verify Purchase Orders & VINs module is loaded\n"
+                        },
+                        {
+                          "text": "[STEP] [#9] [2026-08-12T11:49:52.295Z] [HFI Portal ΓÇö Purchase Orders & VINs] Ensure PO/VIN grid has data (presets: 30D, 90D, 7D, MTD, YTD)\n"
+                        },
+                        {
+                          "text": "[STEP] [#10] [2026-08-12T11:49:52.311Z] [HFI Portal ΓÇö Purchase Orders & VINs] Select date range preset: 30D\n"
+                        },
+                        {
+                          "text": "[STEP] [#11] [2026-08-12T11:49:53.990Z] [HFI Portal ΓÇö Purchase Orders & VINs] PO/VIN data visible under date range: 30D\n"
+                        },
+                        {
+                          "text": "[STEP] [#12] [2026-08-12T11:49:54.007Z] [HFI Portal ΓÇö Purchase Orders & VINs] Count visible PO grid rows\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "(node:81584) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-08-12T11:49:45.422Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Branch has 3 rows; need ΓëÑ50 records to verify page cap (AC-8).",
+                          "location": {
+                            "file": "D:\\HondaDealerAutomation\\tests\\hfi-portal\\Regression\\Sprint2\\PurchaseOrdersVINsRegression.test.ts",
+                            "line": 323,
+                            "column": 16
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c73c42dbdf3cf97341dd-8a1bf6f87f50637ece51",
+              "file": "hfi-portal/Regression/Sprint2/PurchaseOrdersVINsRegression.test.ts",
+              "line": 308,
+              "column": 9
+            },
+            {
+              "title": "TC-017 Verify marking a VIN as Sold makes it eligible for payment selection @positive @high @honda",
+              "ok": true,
+              "tags": [
+                "us-dlr-009",
+                "purchase-orders-vins",
+                "regression",
+                "positive",
+                "high",
+                "honda"
+              ],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "No In Stock VIN found after expanding PO row and checking date ranges 30D and 90D.",
+                      "location": {
+                        "file": "D:\\HondaDealerAutomation\\tests\\hfi-portal\\Regression\\Sprint2\\PurchaseOrdersVINsRegression.test.ts",
+                        "line": 361,
+                        "column": 16
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "purchase-orders-vins-chromium",
+                  "projectName": "purchase-orders-vins-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 9886,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[STEP] [#1] [2026-08-12T11:49:58.108Z] [HFI Portal ΓÇö Purchase Orders & VINs] Open Purchase Orders & VINs from login\n"
+                        },
+                        {
+                          "text": "[STEP] [#2] [2026-08-12T11:49:58.108Z] [HFI Portal ΓÇö Purchase Orders & VINs] Sign in with active dealer credentials\n"
+                        },
+                        {
+                          "text": "[STEP] [#3] [2026-08-12T11:49:58.326Z] [HFI Portal ΓÇö Login] Sign in as KA00007\n"
+                        },
+                        {
+                          "text": "[STEP] [#4] [2026-08-12T11:49:59.240Z] [HFI Portal ΓÇö Purchase Orders & VINs] Navigate to Purchase Orders & VINs via left navigation\n"
+                        },
+                        {
+                          "text": "[STEP] [#5] [2026-08-12T11:49:59.241Z] [HFI Portal ΓÇö Purchase Orders & VINs] Verify Dealer Finance dashboard is loaded\n"
+                        },
+                        {
+                          "text": "[2026-08-12T11:49:59.241Z] [INFO] Current URL before Dealer Finance check: http://devdealerportal.centralindia.cloudapp.azure.com/consumer\n"
+                        },
+                        {
+                          "text": "[STEP] [#6] [2026-08-12T11:49:59.371Z] [HFI Portal ΓÇö Purchase Orders & VINs] Open Dealer Finance tab from post-login landing page\n"
+                        },
+                        {
+                          "text": "[2026-08-12T11:49:59.603Z] [INFO] Dealer Finance dashboard URL: http://devdealerportal.centralindia.cloudapp.azure.com/dashboard\n"
+                        },
+                        {
+                          "text": "[STEP] [#7] [2026-08-12T11:49:59.604Z] [HFI Portal ΓÇö Purchase Orders & VINs] Read page body text\n"
+                        },
+                        {
+                          "text": "[2026-08-12T11:49:59.628Z] [INFO] URL before Purchase Orders click: http://devdealerportal.centralindia.cloudapp.azure.com/dashboard\n"
+                        },
+                        {
+                          "text": "[2026-08-12T11:50:00.123Z] [INFO] URL after Purchase Orders navigation: http://devdealerportal.centralindia.cloudapp.azure.com/operations/purchase-orders\n"
+                        },
+                        {
+                          "text": "[STEP] [#8] [2026-08-12T11:50:00.123Z] [HFI Portal ΓÇö Purchase Orders & VINs] Verify Purchase Orders & VINs module is loaded\n"
+                        },
+                        {
+                          "text": "[STEP] [#9] [2026-08-12T11:50:00.143Z] [HFI Portal ΓÇö Purchase Orders & VINs] Ensure PO/VIN grid has data (presets: 30D, 90D, 7D, MTD, YTD)\n"
+                        },
+                        {
+                          "text": "[STEP] [#10] [2026-08-12T11:50:00.154Z] [HFI Portal ΓÇö Purchase Orders & VINs] Select date range preset: 30D\n"
+                        },
+                        {
+                          "text": "[STEP] [#11] [2026-08-12T11:50:01.817Z] [HFI Portal ΓÇö Purchase Orders & VINs] PO/VIN data visible under date range: 30D\n"
+                        },
+                        {
+                          "text": "[STEP] [#12] [2026-08-12T11:50:01.859Z] [HFI Portal ΓÇö Purchase Orders & VINs] Expand PO row: PO-2026-184107\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-12T11:49:54.279Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "No In Stock VIN found after expanding PO row and checking date ranges 30D and 90D.",
+                          "location": {
+                            "file": "D:\\HondaDealerAutomation\\tests\\hfi-portal\\Regression\\Sprint2\\PurchaseOrdersVINsRegression.test.ts",
+                            "line": 361,
+                            "column": 16
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c73c42dbdf3cf97341dd-3543f2b416fded5d4351",
+              "file": "hfi-portal/Regression/Sprint2/PurchaseOrdersVINsRegression.test.ts",
+              "line": 343,
+              "column": 9
+            },
+            {
+              "title": "TC-034 Verify the Payment column displays all four defined statuses correctly @ui @high @honda",
+              "ok": true,
+              "tags": [
+                "us-dlr-009",
+                "purchase-orders-vins",
+                "regression",
+                "ui",
+                "high",
+                "honda"
+              ],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Need test data with ΓëÑ2 payment states (In Stock, Pending, Awaiting Confirmation, Payment Completed).",
+                      "location": {
+                        "file": "D:\\HondaDealerAutomation\\tests\\hfi-portal\\Regression\\Sprint2\\PurchaseOrdersVINsRegression.test.ts",
+                        "line": 661,
+                        "column": 16
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "purchase-orders-vins-chromium",
+                  "projectName": "purchase-orders-vins-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 7848,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[STEP] [#1] [2026-08-12T11:50:08.059Z] [HFI Portal ΓÇö Purchase Orders & VINs] Open Purchase Orders & VINs from login\n"
+                        },
+                        {
+                          "text": "[STEP] [#2] [2026-08-12T11:50:08.059Z] [HFI Portal ΓÇö Purchase Orders & VINs] Sign in with active dealer credentials\n"
+                        },
+                        {
+                          "text": "[STEP] [#3] [2026-08-12T11:50:08.325Z] [HFI Portal ΓÇö Login] Sign in as KA00007\n"
+                        },
+                        {
+                          "text": "[STEP] [#4] [2026-08-12T11:50:08.981Z] [HFI Portal ΓÇö Purchase Orders & VINs] Navigate to Purchase Orders & VINs via left navigation\n"
+                        },
+                        {
+                          "text": "[STEP] [#5] [2026-08-12T11:50:08.981Z] [HFI Portal ΓÇö Purchase Orders & VINs] Verify Dealer Finance dashboard is loaded\n"
+                        },
+                        {
+                          "text": "[2026-08-12T11:50:08.981Z] [INFO] Current URL before Dealer Finance check: http://devdealerportal.centralindia.cloudapp.azure.com/consumer\n"
+                        },
+                        {
+                          "text": "[STEP] [#6] [2026-08-12T11:50:09.093Z] [HFI Portal ΓÇö Purchase Orders & VINs] Open Dealer Finance tab from post-login landing page\n"
+                        },
+                        {
+                          "text": "[2026-08-12T11:50:09.363Z] [INFO] Dealer Finance dashboard URL: http://devdealerportal.centralindia.cloudapp.azure.com/dashboard\n"
+                        },
+                        {
+                          "text": "[STEP] [#7] [2026-08-12T11:50:09.363Z] [HFI Portal ΓÇö Purchase Orders & VINs] Read page body text\n"
+                        },
+                        {
+                          "text": "[2026-08-12T11:50:09.384Z] [INFO] URL before Purchase Orders click: http://devdealerportal.centralindia.cloudapp.azure.com/dashboard\n"
+                        },
+                        {
+                          "text": "[2026-08-12T11:50:10.076Z] [INFO] URL after Purchase Orders navigation: http://devdealerportal.centralindia.cloudapp.azure.com/operations/purchase-orders\n"
+                        },
+                        {
+                          "text": "[STEP] [#8] [2026-08-12T11:50:10.076Z] [HFI Portal ΓÇö Purchase Orders & VINs] Verify Purchase Orders & VINs module is loaded\n"
+                        },
+                        {
+                          "text": "[STEP] [#9] [2026-08-12T11:50:10.096Z] [HFI Portal ΓÇö Purchase Orders & VINs] Ensure PO/VIN grid has data (presets: 30D, 90D, 7D, MTD, YTD)\n"
+                        },
+                        {
+                          "text": "[STEP] [#10] [2026-08-12T11:50:10.109Z] [HFI Portal ΓÇö Purchase Orders & VINs] Select date range preset: 30D\n"
+                        },
+                        {
+                          "text": "[STEP] [#11] [2026-08-12T11:50:11.814Z] [HFI Portal ΓÇö Purchase Orders & VINs] PO/VIN data visible under date range: 30D\n"
+                        },
+                        {
+                          "text": "[STEP] [#12] [2026-08-12T11:50:11.821Z] [HFI Portal ΓÇö Purchase Orders & VINs] Verify payment status labels in grid\n"
+                        },
+                        {
+                          "text": "[STEP] [#13] [2026-08-12T11:50:11.821Z] [HFI Portal ΓÇö Purchase Orders & VINs] Read page body text\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Verify payment status labels in grid",
+                          "duration": 4,
+                          "error": {
+                            "message": "Error: SKIP: Need test data with ΓëÑ2 payment states (In Stock, Pending, Awaiting Confirmation, Payment Completed).",
+                            "stack": "Error: SKIP: Need test data with ΓëÑ2 payment states (In Stock, Pending, Awaiting Confirmation, Payment Completed).\n    at skipWithReason (D:\\HondaDealerAutomation\\tests\\hfi-portal\\purchase-orders-vins\\purchaseOrdersVINs.helpers.ts:39:9)\n    at D:\\HondaDealerAutomation\\tests\\hfi-portal\\Regression\\Sprint2\\PurchaseOrdersVINsRegression.test.ts:652:29\n    at regressionStep (D:\\HondaDealerAutomation\\tests\\hfi-portal\\purchase-orders-vins\\purchaseOrdersVINs.helpers.ts:20:3)\n    at D:\\HondaDealerAutomation\\tests\\hfi-portal\\Regression\\Sprint2\\PurchaseOrdersVINsRegression.test.ts:642:11",
+                            "location": {
+                              "file": "D:\\HondaDealerAutomation\\tests\\hfi-portal\\purchase-orders-vins\\purchaseOrdersVINs.helpers.ts",
+                              "column": 9,
+                              "line": 39
+                            },
+                            "snippet": "   at hfi-portal\\purchase-orders-vins\\purchaseOrdersVINs.helpers.ts:39\n\n  37 |\n  38 | export function skipWithReason(reason: string): never {\n> 39 |   throw new Error(`SKIP: ${reason}`);\n     |         ^\n  40 | }\n  41 |\n  42 | export async function openPurchaseOrdersVINsPage("
+                          }
+                        }
+                      ],
+                      "startTime": "2026-08-12T11:50:04.189Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Need test data with ΓëÑ2 payment states (In Stock, Pending, Awaiting Confirmation, Payment Completed).",
+                          "location": {
+                            "file": "D:\\HondaDealerAutomation\\tests\\hfi-portal\\Regression\\Sprint2\\PurchaseOrdersVINsRegression.test.ts",
+                            "line": 661,
+                            "column": 16
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c73c42dbdf3cf97341dd-2e110260a41c1e45d99c",
+              "file": "hfi-portal/Regression/Sprint2/PurchaseOrdersVINsRegression.test.ts",
+              "line": 639,
+              "column": 9
+            },
+            {
+              "title": "TC-042 Verify search by model returns matching PO/VIN records @positive @medium @honda",
+              "ok": true,
+              "tags": [
+                "us-dlr-009",
+                "purchase-orders-vins",
+                "regression",
+                "positive",
+                "medium",
+                "honda"
+              ],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "No records for model 'City' on current branch.",
+                      "location": {
+                        "file": "D:\\HondaDealerAutomation\\tests\\hfi-portal\\Regression\\Sprint2\\PurchaseOrdersVINsRegression.test.ts",
+                        "line": 831,
+                        "column": 16
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "purchase-orders-vins-chromium",
+                  "projectName": "purchase-orders-vins-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 10104,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[STEP] [#1] [2026-08-12T11:50:15.969Z] [HFI Portal ΓÇö Purchase Orders & VINs] Open Purchase Orders & VINs from login\n"
+                        },
+                        {
+                          "text": "[STEP] [#2] [2026-08-12T11:50:15.969Z] [HFI Portal ΓÇö Purchase Orders & VINs] Sign in with active dealer credentials\n"
+                        },
+                        {
+                          "text": "[STEP] [#3] [2026-08-12T11:50:16.179Z] [HFI Portal ΓÇö Login] Sign in as KA00007\n"
+                        },
+                        {
+                          "text": "[STEP] [#4] [2026-08-12T11:50:17.662Z] [HFI Portal ΓÇö Purchase Orders & VINs] Navigate to Purchase Orders & VINs via left navigation\n"
+                        },
+                        {
+                          "text": "[STEP] [#5] [2026-08-12T11:50:17.663Z] [HFI Portal ΓÇö Purchase Orders & VINs] Verify Dealer Finance dashboard is loaded\n"
+                        },
+                        {
+                          "text": "[2026-08-12T11:50:17.663Z] [INFO] Current URL before Dealer Finance check: http://devdealerportal.centralindia.cloudapp.azure.com/consumer\n"
+                        },
+                        {
+                          "text": "[STEP] [#6] [2026-08-12T11:50:17.769Z] [HFI Portal ΓÇö Purchase Orders & VINs] Open Dealer Finance tab from post-login landing page\n"
+                        },
+                        {
+                          "text": "[2026-08-12T11:50:18.041Z] [INFO] Dealer Finance dashboard URL: http://devdealerportal.centralindia.cloudapp.azure.com/dashboard\n"
+                        },
+                        {
+                          "text": "[STEP] [#7] [2026-08-12T11:50:18.041Z] [HFI Portal ΓÇö Purchase Orders & VINs] Read page body text\n"
+                        },
+                        {
+                          "text": "[2026-08-12T11:50:18.065Z] [INFO] URL before Purchase Orders click: http://devdealerportal.centralindia.cloudapp.azure.com/dashboard\n"
+                        },
+                        {
+                          "text": "[2026-08-12T11:50:18.541Z] [INFO] URL after Purchase Orders navigation: http://devdealerportal.centralindia.cloudapp.azure.com/operations/purchase-orders\n"
+                        },
+                        {
+                          "text": "[STEP] [#8] [2026-08-12T11:50:18.541Z] [HFI Portal ΓÇö Purchase Orders & VINs] Verify Purchase Orders & VINs module is loaded\n"
+                        },
+                        {
+                          "text": "[STEP] [#9] [2026-08-12T11:50:18.561Z] [HFI Portal ΓÇö Purchase Orders & VINs] Ensure PO/VIN grid has data (presets: 30D, 90D, 7D, MTD, YTD)\n"
+                        },
+                        {
+                          "text": "[STEP] [#10] [2026-08-12T11:50:18.575Z] [HFI Portal ΓÇö Purchase Orders & VINs] Select date range preset: 30D\n"
+                        },
+                        {
+                          "text": "[STEP] [#11] [2026-08-12T11:50:20.230Z] [HFI Portal ΓÇö Purchase Orders & VINs] PO/VIN data visible under date range: 30D\n"
+                        },
+                        {
+                          "text": "[STEP] [#12] [2026-08-12T11:50:20.236Z] [HFI Portal ΓÇö Purchase Orders & VINs] Search by model: City\n"
+                        },
+                        {
+                          "text": "[STEP] [#13] [2026-08-12T11:50:20.237Z] [HFI Portal ΓÇö Purchase Orders & VINs] Search PO/VIN list: City\n"
+                        },
+                        {
+                          "text": "[STEP] [#14] [2026-08-12T11:50:21.827Z] [HFI Portal ΓÇö Purchase Orders & VINs] Read page body text\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Search by model: City",
+                          "duration": 1590
+                        }
+                      ],
+                      "startTime": "2026-08-12T11:50:12.059Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "No records for model 'City' on current branch.",
+                          "location": {
+                            "file": "D:\\HondaDealerAutomation\\tests\\hfi-portal\\Regression\\Sprint2\\PurchaseOrdersVINsRegression.test.ts",
+                            "line": 831,
+                            "column": 16
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c73c42dbdf3cf97341dd-f8c39c7b8d650071ed9a",
+              "file": "hfi-portal/Regression/Sprint2/PurchaseOrdersVINsRegression.test.ts",
+              "line": 816,
+              "column": 9
+            },
+            {
+              "title": "TC-047 Verify changing branch scope refreshes the page data @alternate @high @honda",
+              "ok": true,
+              "tags": [
+                "us-dlr-009",
+                "purchase-orders-vins",
+                "regression",
+                "alternate",
+                "high",
+                "honda"
+              ],
+              "tests": [
+                {
+                  "timeout": 300000,
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "description": "Branch scope selector not visible on page.",
+                      "location": {
+                        "file": "D:\\HondaDealerAutomation\\tests\\hfi-portal\\Regression\\Sprint2\\PurchaseOrdersVINsRegression.test.ts",
+                        "line": 935,
+                        "column": 16
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
+                  "projectId": "purchase-orders-vins-chromium",
+                  "projectName": "purchase-orders-vins-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "skipped",
+                      "duration": 7954,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[STEP] [#1] [2026-08-12T11:50:26.212Z] [HFI Portal ΓÇö Purchase Orders & VINs] Open Purchase Orders & VINs from login\n"
+                        },
+                        {
+                          "text": "[STEP] [#2] [2026-08-12T11:50:26.212Z] [HFI Portal ΓÇö Purchase Orders & VINs] Sign in with active dealer credentials\n"
+                        },
+                        {
+                          "text": "[STEP] [#3] [2026-08-12T11:50:26.540Z] [HFI Portal ΓÇö Login] Sign in as KA00007\n"
+                        },
+                        {
+                          "text": "[STEP] [#4] [2026-08-12T11:50:27.345Z] [HFI Portal ΓÇö Purchase Orders & VINs] Navigate to Purchase Orders & VINs via left navigation\n"
+                        },
+                        {
+                          "text": "[STEP] [#5] [2026-08-12T11:50:27.345Z] [HFI Portal ΓÇö Purchase Orders & VINs] Verify Dealer Finance dashboard is loaded\n"
+                        },
+                        {
+                          "text": "[2026-08-12T11:50:27.345Z] [INFO] Current URL before Dealer Finance check: http://devdealerportal.centralindia.cloudapp.azure.com/consumer\n"
+                        },
+                        {
+                          "text": "[STEP] [#6] [2026-08-12T11:50:27.467Z] [HFI Portal ΓÇö Purchase Orders & VINs] Open Dealer Finance tab from post-login landing page\n"
+                        },
+                        {
+                          "text": "[2026-08-12T11:50:27.727Z] [INFO] Dealer Finance dashboard URL: http://devdealerportal.centralindia.cloudapp.azure.com/dashboard\n"
+                        },
+                        {
+                          "text": "[STEP] [#7] [2026-08-12T11:50:27.727Z] [HFI Portal ΓÇö Purchase Orders & VINs] Read page body text\n"
+                        },
+                        {
+                          "text": "[2026-08-12T11:50:27.749Z] [INFO] URL before Purchase Orders click: http://devdealerportal.centralindia.cloudapp.azure.com/dashboard\n"
+                        },
+                        {
+                          "text": "[2026-08-12T11:50:28.192Z] [INFO] URL after Purchase Orders navigation: http://devdealerportal.centralindia.cloudapp.azure.com/operations/purchase-orders\n"
+                        },
+                        {
+                          "text": "[STEP] [#8] [2026-08-12T11:50:28.192Z] [HFI Portal ΓÇö Purchase Orders & VINs] Verify Purchase Orders & VINs module is loaded\n"
+                        },
+                        {
+                          "text": "[STEP] [#9] [2026-08-12T11:50:28.214Z] [HFI Portal ΓÇö Purchase Orders & VINs] Ensure PO/VIN grid has data (presets: 30D, 90D, 7D, MTD, YTD)\n"
+                        },
+                        {
+                          "text": "[STEP] [#10] [2026-08-12T11:50:28.229Z] [HFI Portal ΓÇö Purchase Orders & VINs] Select date range preset: 30D\n"
+                        },
+                        {
+                          "text": "[STEP] [#11] [2026-08-12T11:50:29.896Z] [HFI Portal ΓÇö Purchase Orders & VINs] PO/VIN data visible under date range: 30D\n"
+                        },
+                        {
+                          "text": "[STEP] [#12] [2026-08-12T11:50:29.902Z] [HFI Portal ΓÇö Purchase Orders & VINs] Read KPI card section text\n"
+                        },
+                        {
+                          "text": "[STEP] [#13] [2026-08-12T11:50:29.910Z] [HFI Portal ΓÇö Purchase Orders & VINs] Change branch scope to Branch\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "Change branch scope to Branch",
+                          "duration": 6,
+                          "error": {
+                            "message": "Error: SKIP: Branch scope selector not visible on page.",
+                            "stack": "Error: SKIP: Branch scope selector not visible on page.\n    at skipWithReason (D:\\HondaDealerAutomation\\tests\\hfi-portal\\purchase-orders-vins\\purchaseOrdersVINs.helpers.ts:39:9)\n    at D:\\HondaDealerAutomation\\tests\\hfi-portal\\Regression\\Sprint2\\PurchaseOrdersVINsRegression.test.ts:920:29\n    at regressionStep (D:\\HondaDealerAutomation\\tests\\hfi-portal\\purchase-orders-vins\\purchaseOrdersVINs.helpers.ts:20:3)\n    at D:\\HondaDealerAutomation\\tests\\hfi-portal\\Regression\\Sprint2\\PurchaseOrdersVINsRegression.test.ts:918:11",
+                            "location": {
+                              "file": "D:\\HondaDealerAutomation\\tests\\hfi-portal\\purchase-orders-vins\\purchaseOrdersVINs.helpers.ts",
+                              "column": 9,
+                              "line": 39
+                            },
+                            "snippet": "   at hfi-portal\\purchase-orders-vins\\purchaseOrdersVINs.helpers.ts:39\n\n  37 |\n  38 | export function skipWithReason(reason: string): never {\n> 39 |   throw new Error(`SKIP: ${reason}`);\n     |         ^\n  40 | }\n  41 |\n  42 | export async function openPurchaseOrdersVINsPage("
+                          }
+                        }
+                      ],
+                      "startTime": "2026-08-12T11:50:22.182Z",
+                      "annotations": [
+                        {
+                          "type": "skip",
+                          "description": "Branch scope selector not visible on page.",
+                          "location": {
+                            "file": "D:\\HondaDealerAutomation\\tests\\hfi-portal\\Regression\\Sprint2\\PurchaseOrdersVINsRegression.test.ts",
+                            "line": 935,
+                            "column": 16
+                          }
+                        }
+                      ],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "c73c42dbdf3cf97341dd-a96f031715e944b453aa",
+              "file": "hfi-portal/Regression/Sprint2/PurchaseOrdersVINsRegression.test.ts",
+              "line": 913,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-08-12T11:49:29.874Z",
+    "duration": 60460.421,
+    "expected": 0,
+    "skipped": 7,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

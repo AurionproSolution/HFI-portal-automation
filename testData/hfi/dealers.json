@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "description": "HFI Dealer Portal — verified dealer credential registry (dev)",
+    "baseUrl": "http://devdealerportal.centralindia.cloudapp.azure.com",
+    "loginPath": "/login",
+    "defaultActiveDealer": "dealer4",
+    "lastVerified": "2026-08-07T07:31:44.595Z",
+    "verificationNotes": "Run: npm run verify:dealers"
+  },
+  "applicationCompleted": {
+    "dealer2": {
+      "label": "Dealer2",
+      "dealerCode": "KA00007",
+      "email": "dealer2@gmail.com",
+      "password": "Secure@Pass1",
+      "temporaryPassword": "",
+      "isDealerFinanceEnabled": true,
+      "expectedState": "applicationCompleted",
+      "actualState": "applicationCompleted",
+      "assignedGroup": "applicationCompleted",
+      "verificationStatus": "verified",
+      "notes": "Authenticated — Consumer/Dealer Finance portal visible"
+    },
+    "dealer8": {
+      "label": "Dealer8",
+      "dealerCode": "PB00018",
+      "email": "dealer8@gmail.com",
+      "password": "Secure@Pass4",
+      "temporaryPassword": "",
+      "isDealerFinanceEnabled": true,
+      "expectedState": "applicationCompleted",
+      "actualState": "applicationCompleted",
+      "assignedGroup": "applicationCompleted",
+      "verificationStatus": "verified",
+      "notes": "Authenticated — Consumer/Dealer Finance portal visible"
+    },
+    "dealer10": {
+      "label": "Dealer10",
+      "dealerCode": "TN00014",
+      "email": "dealer10@gmail.com",
+      "password": "Secure@Pass5",
+      "temporaryPassword": "",
+      "isDealerFinanceEnabled": true,
+      "expectedState": "applicationCompleted",
+      "actualState": "applicationCompleted",
+      "assignedGroup": "applicationCompleted",
+      "verificationStatus": "verified",
+      "notes": "Authenticated — Consumer/Dealer Finance portal visible"
+    },
+    "dealerdp105": {
+      "label": "DealerDP105",
+      "dealerCode": "dp1056723eaf82453e",
+      "email": "dp1056723eaf82453e",
+      "password": "test@1234567890",
+      "temporaryPassword": "",
+      "isDealerFinanceEnabled": true,
+      "expectedState": "applicationCompleted",
+      "actualState": "applicationCompleted",
+      "assignedGroup": "applicationCompleted",
+      "verificationStatus": "verified",
+      "notes": "US-DLR-011 E2E dealer — login via dealer/user ID dp1056723eaf82453e"
+    },
+    "dealerdp2e": {
+      "label": "DealerDP2E",
+      "dealerCode": "dp2e166d012ccecc7b",
+      "email": "dp2e166d012ccecc7b",
+      "password": "Qx7!5J-liYbaIjnkJnz_GW3EXOIQ3FKoZ9",
+      "temporaryPassword": "",
+      "isDealerFinanceEnabled": true,
+      "expectedState": "applicationCompleted",
+      "actualState": "applicationCompleted",
+      "assignedGroup": "applicationCompleted",
+      "verificationStatus": "verified",
+      "notes": "US-DLR-001 regression dealer — login via dealer/user ID dp2e166d012ccecc7b"
+    }
+  },
+  "applicationIncomplete": {
+    "dealer4": {
+      "label": "Dealer4",
+      "dealerCode": "UP00010",
+      "email": "dealer4@gmail.com",
+      "password": "Secure@Pass2",
+      "temporaryPassword": "",
+      "isDealerFinanceEnabled": false,
+      "expectedState": "applicationIncomplete",
+      "actualState": "applicationIncomplete",
+      "assignedGroup": "applicationIncomplete",
+      "verificationStatus": "verified",
+      "notes": "Onboarding / limited-access dashboard visible"
+    },
+    "dealer6": {
+      "label": "Dealer6",
+      "dealerCode": "DL00009",
+      "email": "dealer6@gmail.com",
+      "password": "Secure@Pass3",
+      "temporaryPassword": "",
+      "isDealerFinanceEnabled": false,
+      "expectedState": "applicationIncomplete",
+      "actualState": "applicationIncomplete",
+      "assignedGroup": "applicationIncomplete",
+      "verificationStatus": "verified",
+      "notes": "Onboarding / limited-access dashboard visible"
+    },
+    "dealer12": {
+      "label": "Dealer12",
+      "dealerCode": "KL00008",
+      "email": "dealer12@gmail.com",
+      "password": "Secure@Pass6",
+      "temporaryPassword": "",
+      "isDealerFinanceEnabled": false,
+      "expectedState": "applicationIncomplete",
+      "actualState": "applicationIncomplete",
+      "assignedGroup": "applicationIncomplete",
+      "verificationStatus": "verified",
+      "notes": "Onboarding / limited-access dashboard visible"
+    }
+  },
+  "resetPassword": {
+    "dealer1": {
+      "label": "Dealer1",
+      "dealerCode": "MH00001",
+      "email": "dealer1@gmail.com",
+      "password": "",
+      "temporaryPassword": "Temp@123",
+      "isDealerFinanceEnabled": true,
+      "expectedState": "resetPassword",
+      "actualState": "resetPassword",
+      "assignedGroup": "resetPassword",
+      "verificationStatus": "verified",
+      "notes": "Redirected to Set New Password screen"
+    },
+    "dealer3": {
+      "label": "Dealer3",
+      "dealerCode": "MP00007",
+      "email": "dealer3@gmail.com",
+      "password": "",
+      "temporaryPassword": "Temp@1234",
+      "isDealerFinanceEnabled": true,
+      "expectedState": "resetPassword",
+      "actualState": "resetPassword",
+      "assignedGroup": "resetPassword",
+      "verificationStatus": "verified",
+      "notes": "Redirected to Set New Password screen"
+    },
+    "dealer5": {
+      "label": "Dealer5",
+      "dealerCode": "RJ00015",
+      "email": "dealer5@gmail.com",
+      "password": "",
+      "temporaryPassword": "Temp@123",
+      "isDealerFinanceEnabled": true,
+      "expectedState": "resetPassword",
+      "actualState": "resetPassword",
+      "assignedGroup": "resetPassword",
+      "verificationStatus": "verified",
+      "notes": "Redirected to Set New Password screen"
+    },
+    "dealer7": {
+      "label": "Dealer7",
+      "dealerCode": "GJ00012",
+      "email": "dealer7@gmail.com",
+      "password": "",
+      "temporaryPassword": "Temp@123",
+      "isDealerFinanceEnabled": true,
+      "expectedState": "resetPassword",
+      "actualState": "resetPassword",
+      "assignedGroup": "resetPassword",
+      "verificationStatus": "verified",
+      "notes": "Redirected to Set New Password screen"
+    },
+    "dealer9": {
+      "label": "Dealer9",
+      "dealerCode": "HR00005",
+      "email": "dealer9@gmail.com",
+      "password": "",
+      "temporaryPassword": "Temp@123",
+      "isDealerFinanceEnabled": false,
+      "expectedState": "resetPassword",
+      "actualState": "resetPassword",
+      "assignedGroup": "resetPassword",
+      "verificationStatus": "verified",
+      "notes": "Redirected to Set New Password screen"
+    },
+    "dealer11": {
+      "label": "Dealer11",
+      "dealerCode": "CG00011",
+      "email": "dealer11@gmail.com",
+      "password": "",
+      "temporaryPassword": "Temp@123",
+      "isDealerFinanceEnabled": true,
+      "expectedState": "resetPassword",
+      "actualState": "resetPassword",
+      "assignedGroup": "resetPassword",
+      "verificationStatus": "verified",
+      "notes": "Redirected to Set New Password screen"
+    }
+  },
+  "invalid": {}
+}
